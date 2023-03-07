@@ -124,6 +124,9 @@ glass:
 google-plus:
   name: google-plus-g
   prefix: fab
+wechat:
+  name: wechat
+  prefix: fab
 google-plus-circle:
   name: google-plus
   prefix: fab
