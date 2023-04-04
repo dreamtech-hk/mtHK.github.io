@@ -1,241 +1,642 @@
 ﻿<!doctype html>
 <html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>初賽 - 香港文化旅遊導賞員挑戰賽</title>
-        <meta name="description" content="初賽 - 香港文化旅遊導賞員挑戰賽">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <!-- Place favicon.ico in the root directory -->
 
-        <!-- CSS here -->
-		<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="fontawesome/css/all.min.css">
-        <link rel="stylesheet" href="css/dripicons.css">
-        <link rel="stylesheet" href="css/slick.css">
-        <link rel="stylesheet" href="css/default.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>說好香港文化旅遊故事</title>
+    <meta name="description" content="說好香港文化旅遊故事">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
 
-     <body>
-        <!-- header -->
-        <header id="home" class="header-area">            
-            <div id="header-sticky" class="menu-area">
-                <div class="container">
-                    <div class="second-menu">
-                        <div class="row align-items-center">
-                            <div class="col-xl-3 col-lg-3">
-                                <div class="logo">
-                                    <a href="index.html"><img src="img/logo/logo.png" style="width:174px;" alt="logo"></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-9">
-                                <div class="responsive"><i class="icon dripicons-align-right"></i></div>
-                                <div class="main-menu text-right text-xl-center">
-                                    <nav id="mobile-menu">
-                                        <ul>
-                                            <li class="has-sub"><a href="index.html">主頁</a>
-											</li>
-                                            <li class="has-sub">
-												<a href="about.html">初心</a>												
-											</li>
-                                            
-                                            <li><a href="blog.html">所有報導</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 text-right d-none d-xl-block">
-                                <div class="header-btn second-header-btn">
-                                     <a href="" class="btn"><i class="far fa-ticket-alt"></i>初賽報名</a>
-                                </div>
+    <!-- CSS here -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/dripicons.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+<style>
+    .table th {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .table td {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .fadeImage {
+        max-height: 800px;
+        max-width: 100%;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        opacity: 1;
+        transition: opacity .15s ease-in-out;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0.1;
+        }
+
+        30% {
+            opacity: 0.3;
+        }
+
+        60%{
+            opacity: 0.6;
+        }
+        90% {
+            opacity: 0.9;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <header id="home" class="header-area">
+        <div id="header-sticky" class="menu-area">
+            <div class="container">
+                <div class="second-menu">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo/logo.png" style="width:174px;" alt="logo"></a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- header-end -->
-        <main>
-            <!-- breadcrumb-area -->
-            <section id="parallax" class="slider-area breadcrumb-area d-flex align-items-center justify-content-center fix" style="background-image:url(img/innerpage_bg_img.jpg)">
-			<div class="slider-shape ss-one layer" data-depth="0.10"><img src="img/doddle_6.png" alt="shape"></div>
-			 <div class="slider-shape ss-three layer" data-depth="0.40"><img src="img/doddle_9.png" alt="shape"></div>
-			 <div class="slider-shape ss-four layer" data-depth="0.60"><img src="img/doddle_7.png" alt="shape"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
-                            <div class="breadcrumb-wrap text-center">
-                                <div class="breadcrumb-title mb-30">
-                                    <h2>報導詳情</h2>                                   
-                                </div>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">主頁</a></li>
-                                        <li class="breadcrumb-item" aria-current="page">所有報導</li>
-                                    </ol>
+                        <div class="col-xl-6 col-lg-9">
+                            <div class="responsive"><i class="icon dripicons-align-right"></i></div>
+                            <div class="main-menu text-right text-xl-center">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li class="has-sub"><a href="index.html">主頁</a>
+                                        </li>
+                                        <li class="has-sub">
+                                            <a href="about.html">初心</a>
+                                        </li>
+
+                                        <li><a href="blog.html">所有報導</a></li>
+                                    </ul>
                                 </nav>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <!-- breadcrumb-area-end -->
-            <!-- inner-blog -->
-            <section class="inner-blog b-details-p pt-120 pb-140 wow fadeInUp animated" data-animation="fadeInUp animated" data-delay=".2s">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="blog-details-wrap">
-                                <div class="meta__info">
-                                    <ul>
-                                        <li><a href="#"><i class="far fa-user"></i>by Hello Hong Kong</a></li>
-                                       
-                                    </ul>
-                                </div>
-                                <div class="details__content pb-50">
-                                    <h2>2023香港文化旅遊導賞員挑戰賽</h2>
-                                    <p>香港，這座富有活力的城市，一直是亞洲的文化、商業和旅遊中心。香港的魅力之一是其深厚的歷史和獨特的文化，其中包括中西合璧的食物、古老的傳統建築和宏偉的現代建築。</p>
-                                    <p> 為了進一步提高香港文化旅遊的品質和知名度，2023香港文化旅遊導賞員挑戰賽正在火熱的籌備中。這項比賽將為參賽者提供一個展示他們知識和技能的平台，並增加遊客對香港文化的了解。 </p>
-                                    <p> 這場比賽將涵蓋多個方面，包括歷史、文化、藝術、美食、購物和娛樂等。參賽者將需要進行多輪的測試和實踐演練，以展示他們的知識和技能。他們需要展現出對香港歷史和文化的深刻理解，以及良好的溝通和領導能力。</p>
-                                    <blockquote>
-                                        這座富有活力的城市，一直是亞洲的文化、商業和旅遊中心。
-                                        <footer>- 香港</footer>
-                                    </blockquote>
-                                    <p>參賽者將在比賽中展示他們在各個方面的能力，例如領導遊客在歷史古蹟和文化遺產上的旅遊，為遊客介紹香港的美食和購物場所，同時展示他們的英語和普通話水平。比賽的評判標準將涵蓋導遊的知識和技能、語言表達和人際溝通能力、演示效果和領導力等方面。 </p>
-                                    <p>此外，比賽還將吸引來自世界各地的遊客和媒體代表，他們將在比賽中體驗香港的文化旅遊，同時評估參賽者的表現。這將是一個展示香港文化旅遊魅力的絕佳機會，同時也將吸引更多的遊客來到香港。 </p>
-                                    <p>2023香港文化旅遊導賞員挑戰賽的舉辦不僅將提高香港文化旅遊的知名度和品質，同時也將提高導遊的職業地位和專業水平。這將有助於鼓勵更多的人選擇成為導賞員，並為香港文化旅遊業注入新的活力。</p>
-                                    <div class="details__content-img">
-                                        <img src="img/blog/b_details01.jpg" alt="">
-                                    </div>
-                                    <p>總而言之，2023香港文化旅遊導賞員挑戰賽是一個非常令人期待的比賽，將為遊客提供更好的旅遊體驗，為導遊提供更多的發展機會，同時也將為香港文化旅遊帶來更多的機遇和挑戰。作為一個全球知名的文化和旅遊中心，香港有著廣闊的市場和潛力，2023香港文化旅遊導賞員挑戰賽將為香港文化旅遊業的未來發展提供重要的支持和推動。</p>
-                                    <figure>
-                                        <img src="img/blog/aside/hkbg.png" alt="">
-                                        <p>• 深度挖掘香港富有歷史文化、古物古蹟、美食美景、多元色彩的旅遊資源<br>
-                                            • 整合“旅遊教育+青少年活動+特色旅遊+公益活動+社交平台宣傳+市場營銷”等元素的商業模式創新</p>
-                                    </figure>
-                                  
-                                </div>
-                                <div class="posts_navigation pt-35 pb-35">
-                                    <div class="row align-items-center">
-                                        <div class="col-xl-4 col-md-5">
-                                            <div class="prev-link">
-                                                <span>Prev Post</span>
-                                                <h4>(無)</h4> 
-                                                <!-- <h4><a href="#">(無)</a></h4> -->
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-md-2 text-left text-md-center">
-                                            <a href="blog.html" class="blog-filter"><img src="img/icon/c_d01.png" alt=""></a>
-                                        </div>
-                                        <div class="col-xl-4 col-md-5">
-                                            <div class="next-link text-left text-md-right">
-                                                <span>next Post</span>
-                                                <h4><a href="香港遊覽短途路線攻略.html">香港遊覽短途路線攻略</a></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                             
-                                <div class="avatar__wrap text-center  mt-45 mb-45">
-                                    <div class="avatar-img">
-                                        <img src="img/blog/comment/avatar.png" alt="">
-                                    </div>
-                                    <div class="avatar__info">
-                                        <h5>Hello Hong Kong</h5>
-                                        <div class="avatar__info-social">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                            <a href="#"><i class="fab fa-weixin"></i></a> 
-                                        </div>
-                                    </div>
-                                    <div class="avatar__wrap-content">
-                                        <p>遊遍世界，學貫中西</p>
-                                    </div>
-                                </div>
-                              
-                                
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-            </section>
-            <!-- inner-blog-end -->
-        </main>
-        <!-- footer -->
-        <footer class="footer-bg footer-p" style="background-image:url(img/footer_bg_img.jpg);background-size: cover;">
-          
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-xl-12 col-lg-12 col-sm-12 text-center">
-                            <div class="footer-widget pt-120 mb-30">
-                                <div class="logo mb-35">
-                                    <a href="#"><img src="img/logo/logo.png" style="width:174px;" alt="logo"></a>
-                                </div>
-                                <div class="footer-text mb-20">
-                                    <p>遊遍世界，學貫中西</p>
-                                </div>
-                                <div class="footer-social">                                    
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-weixin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-wrap pb-120">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">						
-                            <div class="copyright-text text-center">
-								<div class="footer-link">
-                                    <ul>
-                                        <li><a href="about.html">初心</a></li>
-                                        <li><a href="blog.html">報導</a></li>
-                                        <li><a href="#">報名</a></li>
-                                    </ul>
-                                </div>                              
+                        <div class="col-xl-3 text-right d-none d-xl-block">
+                            <div class="header-btn second-header-btn">
+                                <a href="" class="btn"><i class="far fa-ticket-alt"></i>初賽報名</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- footer-end -->
+        </div>
+    </header>
+    <!-- header-end -->
+    <main>
+        <!-- breadcrumb-area -->
+        <section id="parallax" class="slider-area breadcrumb-area d-flex align-items-center justify-content-center fix"
+            style="background-image:url(img/innerpage_bg_img.jpg)">
+            <div class="slider-shape ss-one layer" data-depth="0.10"><img src="img/doddle_6.png" alt="shape"></div>
+            <div class="slider-shape ss-three layer" data-depth="0.40"><img src="img/doddle_9.png" alt="shape"></div>
+            <div class="slider-shape ss-four layer" data-depth="0.60"><img src="img/doddle_7.png" alt="shape"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="breadcrumb-wrap text-center">
+                            <div class="breadcrumb-title mb-30">
+                                <h2>報導詳情</h2>
+                            </div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">主頁</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">所有報導</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+        <!-- inner-blog -->
+        <section class="inner-blog b-details-p pt-120 pb-140 wow fadeInUp animated" data-animation="fadeInUp animated"
+            data-delay=".2s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="blog-details-wrap">
+                            <div class="meta__info">
+                                <ul>
+                                    <li><i class="far fa-alarm-clock"></i>about 3 mins</li>
+                                    <li><a href="#"><i class="far fa-user"></i>by Edward Cheuk 卓友森</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="details__content pb-50">
+                                <h2>Hello Hong Kong-2023香港文化旅遊導賞員挑戰賽 說好香港文化旅遊故事</h2>
+                                <p>國家《十四五規劃綱要》明確支持香港發展成為中外文化藝術交流中心，這不單顯示了國家對香港的期望，更充分肯定了香港多年來蓬勃及多元發展的文化藝術及創意產業</p>
+                                <p>事實上，香港匯聚中西文化精髓，文化旅遊元素極其豐富。例如：根據聯合國教育、科學及文化組織（聯合國教科文組織）的《保護非物質文化遺產公約》（《公約》）的標準，2014年6月公佈的「香港非物質文化遺產清單」，有480項傳統藝術是名列其中。長洲太平清醮、大澳端午遊涌、大坑舞火龍和香港潮人盂蘭勝會被列為第三批國家級非物質文化遺產。粵劇更被列入聯合國教科文組織的《人類非物質文化遺產代表作名錄》，是一項世界級非遺項目。
+                                </p>
+                                <p>為了令公眾增加對本港文化景點的認識，精英校友聯盟、香港高等教育協會聯合香港本地6個慈善機構，共同發起「Hello Hong
+                                    Kong-2023香港文化旅遊導員賞員挑戰賽」（簡稱：Hello Hong
+                                    Kong挑戰賽），呼籲本地16-29歲青少年，設計自己喜歡的香港文化旅遊路線，並親自充當導賞員，向香港本地市民、內地同胞、甚至全世界遊客，宣傳推廣香港獨具一格的文化旅遊線路。
+                                </p>
+                                <p>為了更加了解本地青少年的喜好，大會組織了「Let’s Go Hong Kong!十大文化景點評選」（簡稱：Let’s Go Hong
+                                    Kong評選），呼籲香港本地青少年參與投票，選出他們最喜歡的香港本地文化景點。於2月下旬透過網上調查及街頭問卷，共訪問了671名16至29歲的年輕人，以投選最喜歡的本港文化景點。
+                                </p>
+                                <p>「Let’s Go Hong Kong評選」結果於3月21日正式對外公佈，當天下午2點半-3點，陸瀚民和江玉歡兩位立法會議員，聯同30名支持「Hello Hong
+                                    Kong挑戰賽」的各行各業代表，齊聚九龍公園「香港文物探知館」門外階梯，向新聞媒體的朋友宣佈評選結果。
+                                </p>
+                                <figure>
+                                    <img src="img/firstBlog/IMG_0046.JPG" alt="">
+                                    <p>主辦方別出心裁，邀請藝術家胡敬清女士、李昇敏先生、王天為先生、楊展先生，以剪紙、撕紙、篆刻書法、藍染等中國民間傳統技藝，展示這十大文化景點。與此同時，書法家蕭嘉豪老師亦即席揮毫，題寫「香港文物探知館」。
+                                    </p>
+                                </figure>
+                                <p>之後，「Hello Hong Kong挑戰賽」發起機構代表：朱偉明先生和林偉文先生，聯同兩位立法會議員宣布「Hello Hong
+                                    Kong香港文化旅遊導賞員挑戰賽」正式啟動，為長達三個月的挑戰賽初賽拉開序幕。</p>
+                                <div class="details__content-img">
+                                    <img src="img/firstBlog/IMG_0061.JPG" alt="">
+                                </div>
+                                <p>有關「Hello Hong Kong挑戰賽」相關信息，敬請時時關注籌委會官方網站：<a
+                                        href="https://www.hellohongkong-miceetours.org">www.hellohongkong-miceetours.org</a>
+                                </p>
+                                <blockquote>
+
+                                    <footer>有關「Let’s Go Hong Kong!十大文化景點評選」</footer>
+                                </blockquote>
+                                <p>大會於2月下旬透過網上調查及街頭問卷，共訪問了671名16至29歲的年輕人，以投選最喜歡的本港文化景點。問卷約有20多個文化景點供選，每名受訪者最多可投10票。結果發現，入選十大的文化景依次為1)
+                                    香港故宮文化博物館、2)大館、3)PMQ元創方、4)中環街市、5)M+博物館、6)醫學博物館、7)香港文物探知館、8)香港大學歷史建築、9)1881Heritage及饒宗頤文化館。各景點得票數如下：
+                                </p>
+                                <table class="table" style="text-align: center;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">排名</th>
+                                            <th scope="col">文化景點</th>
+                                            <th scope="col">票數</th>
+                                            <th scope="col">相片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>香港故宮文化博物館</td>
+                                            <td>623</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/03-故宮博物院.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>大館</td>
+                                            <td>601</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/07-大館.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>PMQ 元創方</td>
+                                            <td>543</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/09-PMG.JPG"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>中環街市</td>
+                                            <td>513</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/02-中環街市.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>M+博物館</td>
+                                            <td>492</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/01-M-博物館.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>醫學博物館</td>
+                                            <td>460</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/08-醫學博物館.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>香港文物探知館</td>
+                                            <td>434</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/04-文物探知館.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>香港大學歷史建築</td>
+                                            <td>427</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/06-香港大學步行徑.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>1881Heritage</td>
+                                            <td>401</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/10-1881.JPG"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>饒宗頤文化館</td>
+                                            <td>398</td>
+                                            <td><img style="max-height: 80px;" src="img/firstBlog/05-饒宗頤文化館.jpg"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <blockquote>
+
+                                    <footer>有關「Hello Hong Kong-2023香港文化旅遊導員賞員挑戰賽」</footer>
+                                </blockquote>
+                                <p>「Hello Hong
+                                    Kong挑戰賽」是一個集「說好香港文化旅遊故事」、「鍛煉青少年團隊精神、邏輯思考能力、分析能力、語言表達能力、公開演講能力、視頻拍攝及剪輯能力、社交平台自我形象打造能力」、「讓青少年自發而為-我愛我家」的趣味性香港本地遊學活動。
+                                </p>
+                                <p>比賽分為初賽和決賽。初賽方面，參賽隊伍以香港多元的旅遊資源為背景；設計一條「香港特色一天遊路線」；撰寫導賞團講解詞；親自講述講解，拍攝成一條約2至3分鐘視頻，提交大賽組委會；組委會以專業評委，聯同網絡評選方式，選出最佳20隊進入決賽。
+                                </p>
+                                <p>進入決賽後，組委會為參賽隊伍配對旅行社；旅行社委派專人指導學生把原先設計的「香港特色一天遊路線」變成可操作；旅行社將協助參賽隊伍以組織旅行團方式向社會宣傳推廣及收客：比賽結果以創意特色、獲客人數、好評程度、盈收多寡等元素決出勝負。
+                                </p>
+                                <p>參賽資格方面，須為16歲以上中學生至29歲青年，並以3至5人小組形式組隊參賽。參賽語言可選擇粵語、普通話或英語。</p>
+                                <p>目前挑戰賽已經獲得不同界別的持份者，包括：大專院校及傳統名牌中學學生、慈善及社團機構、內地在港讀書大學生、旅遊及餐飲業界、粵港澳大灣區文體旅遊部門領導等的重視、肯定、關注和支持。
+                                </p>
+
+                                <blockquote>
+
+                                    <footer>有關現場嘉賓名單</footer>
+                                    （排名不分先後）
+                                </blockquote>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>陸瀚民 先生-立法會議員</p>
+                                        <p>江玉歡 女士-立法會議員</p>
+                                        <p> 鄭敏如 女士-國際獅子會中國港澳303區-（2023-24年度）第二副總監參選人</p>
+                                        <p>卓友森 先生-遊學天地-創辦人</p>
+                                        <p>朱偉明 先生-精英校友聯盟-現任會長</p>
+                                        <p>林偉文 先生-香港高等教育協會-會長</p>
+                                        <p>陳俐達 小姐-香港醫學博物館學會-公關及傳訊主任</p>
+                                        <p>鄧秉森 博士-CTC商旅網絡 - 執行董事</p>
+                                        <p>張裕錡 先生-精英校友聯盟-創會主席</p>
+                                        <p>林建華 博士-香港校董學會-主席</p>
+                                        <p>劉德銘 先生-鐘聲慈善社胡陳金枝中學-校長</p>
+                                        <p>劉永漢 先生-香港發明創新總會-副會長</p>
+                                        <p>梁秀英 女士-悠樂長-戰略合作夥伴</p>
+                                        <p>胡敬清 女士-剪紙傳統技藝傳承人</p>
+                                        <p>王天為 先生-當代中國書畫家聯合總會-主席</p>
+                                        <p>蕭嘉豪 先生-荷風堂書畫院-導師</p>
+                                        <p>梁國鵬 先生-MH Connect -聯合創始人</p>
+                                        <p>何民傑 先生-景嶺社-創辦人</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>何桂明 女士-《獅聲》-總編</p>
+                                        <p>林戈 先生-香港傳統技藝拓展（慈善）協會-主席</p>
+                                        <p>石翠珊 女士-協進同行-總幹事</p>
+                                        <p>蔡家齊 先生-香港滾軸溜冰青年學院-創辦人</p>
+                                        <p>楊子儀 博士-發明家</p>
+                                        <p>陳珍莉 女士-前世界舞蹈冠軍</p>
+                                        <p>陳健明 先生-Charles Russell Speedlys-合夥人</p>
+                                        <p>李本立 先生-悠樂長-主席</p>
+                                        <p>廖家如 女士-賽馬會鯉魚門創意館-項目主任</p>
+                                        <p>余美芳 女士-鐘聲慈善社胡陳金枝中學-老師</p>
+                                        <p>李淑英 女士-導賞員培訓師</p>
+                                        <p>張美雄 先生-將軍澳區議會-議員</p>
+                                        <p>王寶新 先生-良師學校- CEO</p>
+                                        <p>黃曉惠 小姐-香港浸會大學-參賽代表</p>
+                                        <p>李妮娜 女士-香港海南社團總會離島區-召集人</p>
+                                        <p>卓大立 先生-華中科技大學香港校友會-副會長兼司庫</p>
+                                        <p>葉振雄 先生-鐘聲慈善社胡陳金枝中學-老師</p>
+                                        <p>李金悅 小姐-香港大學-參賽代表</p>
+                                        <p> 陳建華 先生-湛江市-政協委員</p>
+                                    </div>
+                                </div>
 
 
 
-        <!-- JS here -->
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/one-page-nav-min.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/ajax-form.js"></script>
-        <script src="js/paroller.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/parallax.min.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/jquery.scrollUp.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/element-in-view.js"></script>
-		<script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+                                <section id="team" class="portfolio-area p-relative pt-120 pb-120 fix">
+                                    <!-- <div class="section-t team-t paroller" data-paroller-factor="0.15" data-paroller-factor-lg="0.15" data-paroller-factor-md="0.15" data-paroller-factor-sm="0.15" data-paroller-type="foreground" data-paroller-direction="horizontal"><h2>GALLERY</h2></div>				 -->
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <div class="col-xl-6 col-lg-8">
+                                                <div class="section-title text-center mb-80">
+                                                    <!-- <span class="wow fadeInUp animated" data-animation="fadeInUp animated" data-delay=".2s">Hello Hong Kong-2023香港文化旅遊導賞員挑戰賽</span> -->
+                                                    <h2 class="wow fadeInUp animated" data-animation="fadeInUp animated"
+                                                        data-delay=".2s">GALLERY</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slideshow-container">
+
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">1 / 8</div>
+                                                <img src="img/firstBlog/IMG_0018.JPG" class="fadeImage">
+                                                <!-- <div class="text">Caption Two</div> -->
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">2 / 8</div>
+                                                <img src="img/firstBlog/IMG_0022.JPG" class="fadeImage">
+                                                <!-- <div class="text">Caption Two</div> -->
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">3 / 8</div>
+                                                <img src="img/firstBlog/IMG_0037.JPG" class="fadeImage">
+                                                <!-- <div class="text">Caption Two</div> -->
+                                            </div>
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">4 / 8</div>
+                                                <img src="img/firstBlog/IMG_0044.JPG" class="fadeImage">
+                                                <!-- <div class="text">Caption Two</div> -->
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">5 / 8</div>
+                                                <img src="img/firstBlog/IMG_0046.JPG" class="fadeImage">
+                                                <!-- <div class="text">Caption Two</div> -->
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">6 / 8</div>
+                                                <img src="img/firstBlog/IMG_0061.JPG" class="fadeImage">
+                                                <!-- <div class="text">Caption Three</div> -->
+                                            </div>
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">7 / 8</div>
+                                                <img src="img/firstBlog/IMG_0133.JPG" class="fadeImage">
+                                                <!-- <div class="text">Caption Text</div> -->
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">8 / 8</div>
+                                                <img src="img/firstBlog/IMG_0145.JPG" class="fadeImage">
+                                                <!-- <div class="text">Caption Two</div> -->
+                                            </div>
+
+                                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                                        </div>
+                                        <br>
+
+                                        <div style="text-align:center">
+                                            <span class="dot" onclick="currentSlide(1)"></span>
+                                            <span class="dot" onclick="currentSlide(2)"></span>
+                                            <span class="dot" onclick="currentSlide(3)"></span>
+                                            <span class="dot" onclick="currentSlide(4)"></span>
+                                            <span class="dot" onclick="currentSlide(5)"></span>
+                                            <span class="dot" onclick="currentSlide(6)"></span>
+                                            <span class="dot" onclick="currentSlide(7)"></span>
+                                            <span class="dot" onclick="currentSlide(8)"></span>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                            <div class="posts_navigation pt-35 pb-35">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-4 col-md-5">
+                                        <div class="prev-link">
+                                            <span>Prev Post</span>
+                                            <h4>(無)</h4>
+                                            <!-- <h4><a href="#">(無)</a></h4> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-2 text-left text-md-center">
+                                        <a href="blog.html" class="blog-filter"><img src="img/icon/c_d01.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-5">
+                                        <div class="next-link text-left text-md-right">
+                                            <span>next Post</span>
+                                            <h4>(無)
+                                                <!-- <a href="香港遊覽短途路線攻略.html">香港遊覽短途路線攻略</a> -->
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- inner-blog-end -->
+    </main>
+    <!-- footer -->
+    <footer class="footer-bg footer-p" style="background-image:url(img/footer_bg_img.jpg);background-size: cover;">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-12 col-lg-12 col-sm-12 text-center">
+                        <div class="footer-widget pt-120 mb-30">
+                            <div class="logo mb-35">
+                                <a href="#"><img src="img/logo/logo.png" style="width:174px;" alt="logo"></a>
+                            </div>
+                            <div class="footer-text mb-20">
+                                <p>遊遍世界，學貫中西</p>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-weixin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright-text text-center">
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="about.html">初心</a></li>
+                                    <li><a href="blog.html">報導</a></li>
+                                    <li><a href="#">報名</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/one-page-nav-min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/element-in-view.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
 </html>
