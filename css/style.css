@@ -4231,7 +4231,7 @@ transition: all 0.3s ease-out 0s;
 	content: "";
 	left: 19px;
 	top: 29px;
-	background: url(../images/blockquote_d.png);
+	/* background: url(../images/blockquote.png); */
 	height: 86px;
 	width: 92px;
 	z-index: -1;
@@ -5890,7 +5890,7 @@ padding-right: 20px;
 	content: "";
 	left: 19px;
 	top: 29px;
-	background: url(../img/icon/blockquote_d.png);
+	/* background: url(../img/icon/blockquote_d.png); */
 	height: 86px;
 	width: 92px;
 	z-index: -1;
