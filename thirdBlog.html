@@ -1,0 +1,891 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>說好香港文化旅遊故事</title>
+    <meta name="description" content="說好香港文化旅遊故事">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/dripicons.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+<style>
+    .table th {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .table td {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .fadeImage {
+        max-height: 70vh;
+        width: auto;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1s;
+        opacity: 1;
+        transition: opacity .15s ease-in-out;
+        text-align: center;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+
+    .details__content blockquote {
+        background: #FF007A;
+        color: white;
+    }
+
+    .widget__post-thumb {
+        text-align: center;
+        min-height: 60px;
+    }
+
+    .widget__post-thumb img {
+        width: 80px;
+
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <header id="home" class="header-area">
+        <div id="header-sticky" class="menu-area">
+            <div class="container">
+                <div class="second-menu">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo/logo.png" style="width:174px;" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-9">
+                            <div class="responsive"><i class="icon dripicons-align-right"></i></div>
+                            <div class="main-menu text-right text-xl-center">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li class="has-sub"><a href="index.html">主頁</a>
+                                        </li>
+                                        <li class="has-sub">
+                                            <a href="about.html">初心</a>
+                                        </li>
+
+                                        <li><a href="blog.html">所有報導</a></li>
+                                        <li><a href="history.html">歷史記錄</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 text-right d-none d-xl-block">
+                            <div class="header-btn second-header-btn">
+                                <a href="https://forms.gle/2WGHpinJzQ9br7Nr6" class="btn"><i
+                                        class="far fa-ticket-alt"></i>初賽報名</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+    <main>
+        <!-- breadcrumb-area -->
+        <section id="parallax" class="slider-area breadcrumb-area d-flex align-items-center justify-content-center fix"
+            style="background-image:url(img/innerpage_bg_img.jpg)">
+            <div class="slider-shape ss-one layer" data-depth="0.10"><img src="img/doddle_6.png" alt="shape"></div>
+            <div class="slider-shape ss-three layer" data-depth="0.40"><img src="img/doddle_9.png" alt="shape"></div>
+            <div class="slider-shape ss-four layer" data-depth="0.60"><img src="img/doddle_7.png" alt="shape"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="breadcrumb-wrap text-center">
+                            <div class="breadcrumb-title mb-30">
+                                <h2>報導詳情</h2>
+                            </div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">主頁</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">所有報導</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+        <!-- inner-blog -->
+        <section class="inner-blog b-details-p pt-120 pb-140 wow fadeInUp animated" data-animation="fadeInUp animated"
+            data-delay=".2s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="blog-details-wrap">
+                            <div class="meta__info">
+                                <ul>
+                                    <li><i class="far fa-alarm-clock"></i>about 3 mins</li>
+                                    <li><i class="far fa-user"></i>by Edward Cheuk 卓友森</li>
+
+                                </ul>
+                            </div>
+                            <div class="details__content pb-50">
+                                <h2>未來青年旅遊大使齊聚屯門珠海學院·Hello Hong Kong-挑戰賽工作坊首發儀式圓滿成功</h2>
+                                <p>『Hello Hong
+                                    Kong-2023香港文化旅遊導賞員挑戰賽』（簡稱：挑戰賽）是一個集“講好香港文化旅遊故事”、“鍛煉青少年團隊精神、邏輯思考能力、分析能力、語言表達能力、公開演講能力、視頻拍攝及剪輯能力、社交平台自我形象打造能力”、“讓青少年自發而為-我愛我家”的趣味性香港本地遊學活動。
+                                </p>
+                                <p>挑戰賽獲得不同界別的持份者，包括：大專院校及本地中學在讀學生、慈善及社團機構、內地在港讀書大學生、旅遊及餐飲業界、粵港澳大灣區文體旅遊部門領導……等的重視、肯定、關注和支持。<a
+                                        href="./firstBlog.html">挑戰賽新聞發佈會及活動啟動儀式</a>已於3月21日下午2時30分至3時，假座香港文物探知館順利舉行。
+                                </p>
+                                <p>此外，內地文體旅遊部門領導對挑戰賽非常重視，霍英東集團屬下機構-南沙咨詢科技園已經向挑戰賽籌委會索取挑戰賽·廣州賽區的主辦權，並於4月21日（星期五）下午2點-4點在南沙舉辦<a
+                                        href="./secondBlog.html">『Hello Hong
+                                        Kong-2023香港文化旅遊導賞員挑戰賽·廣州賽區啟動儀式』</a>，當天，廣州市南沙區文體旅遊局領導、霍英東集團領導、廣東省導遊協會領導、廣東省產教促進會領導、新聞媒體朋友、廣州市各大專院校的代表以及香港籌委會代表團匯聚現場，氣氛非常熱烈。
+                                </p>
+                                <p>為了讓挑戰賽效果更加良好，挑戰賽籌委會將為每位報名參賽者提供免費的工作坊及本地文化古蹟旅遊，工作坊內容包括：旅遊線路設計思路指導、公開演講能力及技巧指導、視頻拍攝技術指導、社交媒體運營技巧指導；香港本地文化旅遊行程則是根據香港旅遊業議會文化古蹟旅遊指引而設計的線路。
+                                </p>
+                                <p>籌委會主席-旅遊達人卓友森親自拍攝短視頻，介紹<a
+                                        href="https://www.youtube.com/watch?v=lkBaMhGCtkQ&t=29s">挑戰賽比賽規則</a>。
+                                </p>
+                                <p>籌委會希望通過工作坊的培訓，參賽的學生及年青人將更有信心和能力，說好他們心目中的香港文化旅遊故事。</p>
+                                <figure>
+                                    <img src="img/applicationQRcode.png" alt="挑戰賽報名二維碼">
+                                    <p><a
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSfNAyQT0oJJ_FS9SVxu7hgUmcmRvf-HRevtf_NO8yN0mYeKqw/viewform">挑戰賽報名鏈接</a>及二維碼
+                                    </p>
+                                </figure>
+                                <p>「挑戰賽工作坊首發儀式」已於4月30日（星期天）在香港屯門珠海學院舉辦，當天早上，160名高中生、大學本科生及研究生參賽代表出席，另有30名籌委會成員及特邀嘉賓列席。詳情請查看<a
+                                        href="https://www.youtube.com/watch?v=fGaZHp4DFiw&t=14s"></a>當天活動視頻記錄。</a>
+                                </p>
+                                <div class="details__content-img">
+                                    <img src="img/firstBlog/IMG_0061.JPG" alt="">
+                                </div>
+                                <p>有關「Hello Hong Kong挑戰賽」相關信息，敬請時時關注籌委會官方網站：<a
+                                        href="https://www.hellohongkong-miceetours.org">www.hellohongkong-miceetours.org</a>
+                                </p>
+
+
+                                <blockquote>
+
+                                    <footer>挑戰賽工作坊圓滿成功，特別鳴謝以下機構與人士</footer>
+                                    （排名不分先後）
+                                </blockquote>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>珠海學院-場地贊助</p>
+                                        <p>珠海學院校務處工作人員</p>
+                                        <p> 何君堯 先生-立法會議員</p>
+                                        <p>卓友森 先生-籌委會主席
+                                        </p>
+                                        <p>
+                                            朱偉明 先生-精英校友聯盟現任會長
+                                        </p>
+                                        <p>林偉文 先生-香港高等教育協會現任會長
+                                        </p>
+                                        <p>陳珍莉 院士-舞蹈世界冠軍
+                                        </p>
+                                        <p>林景昇 先生-國際演講會89大區（2021-2022年度）總監</p>
+                                        <p>
+                                            趙惠民 先生-香港創新發明總會第一常務副會長
+                                        </p>
+                                        <p>施曉昇 先生-分享嘉賓-網紅KOL</p>
+                                        <p>
+                                            羅墨軒 博士生-香港大學研究生會會長
+                                        </p>
+                                        <p>張璐 博士生-香港大學研究生會匯聲藝術社社長</p>
+                                        <p>香港大學研究生會30名學生代表</p>
+                                        <p>陳家健 老師-獅子會中學老師</p>
+                                        <p>梁佩瑩 老師-獅子會中學老師</p>
+                                        <p>王震亞 老師-獅子會中學老師</p>
+                                        <p>獅子會中學76名學生代表</p>
+                                        <p>賴婉婷 老師-荔景天主教中學老師</p>
+                                        <p>荔景天主教中學38名學生代表</p>
+                                        <p>葉振雄 老師-鐘聲慈善社胡陳金枝中學老師</p>
+                                        <p>鐘聲慈善社胡陳金枝中學7名學生代表</p>
+                                        <p>劉永漢 先生-悠樂長APP創辦人</p>
+                                        <p>梁秀英 女士-悠樂長APP戰略合作夥伴</p>
+                                        
+                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>何民傑 先生-籌委會公關負責人</p>
+                                        <p>黃曉惠 小姐-籌委會秘書處及挑戰賽工作坊主持人</p>
+                                        <p>毛樂 先生-籌委會秘書處及前台接待</p>
+                                        <p>林戈 先生-香港傳統技藝拓展（慈善）協會主席</p>
+                                        <p>楊子儀 博士-發明家</p>
+                                        <p>潘影兒 女士-導師</p>
+                                        <p>胡炎松 先生-潮屬社團總會·盂蘭勝會保育委員會副主席</p>
+                                        <p>胡敬清 女士-香港傳統技藝拓展（慈善）協會會長</p>
+                                        <p>周永堅 先生-香港傳統技藝拓展（慈善）協會會長</p>
+                                        <p>陳舜荃 先生-協進同行項目執行總幹事</p>
+                                        <p>董家裕 先生-協進同行高爾夫培訓總監</p>
+                                        <p>徐明德 先生-香港創新發明總會副會長</p>
+                                        <p> 李浩民 先生-CJR運營總監</p>
+                                        <p> 林詠欣 小姐-大灣區青年企業家協會會長</p>
+                                        <p>陳桂姿 女士-遊學天地文化旅遊導賞員</p>
+                                        <p>李兆彬 先生-香港文職及專業人員總會副會長</p>
+                                        <p>潘學智 先生-香港中文大學滬港發展聯合研究所副研究員</p>
+                                        <p>林玉華 女士-趣懶國際旅行社創始人</p>
+                                        <p>區艷龍 女士-中港食品安全交流協會執委會委員</p>
+                                        <p>陳志寶 先生-香港地產精英總會創會會長</p>
+                                        <p>
+                                            攝影：趙苑榆 小姐</p>
+                                        <p>無人機：Teddy</p>
+                                        <p>原創音樂：陳珍莉 院士</p>
+                                        <p>承辦機構：遊學天地
+                                        </p>
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+
+                            <section id="team" class="portfolio-area p-relative pt-120 pb-120 fix">
+                                <!-- <div class="section-t team-t paroller" data-paroller-factor="0.15" data-paroller-factor-lg="0.15" data-paroller-factor-md="0.15" data-paroller-factor-sm="0.15" data-paroller-type="foreground" data-paroller-direction="horizontal"><h2>GALLERY</h2></div>				 -->
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-8">
+                                            <div class="section-title text-center mb-80">
+                                                <!-- <span class="wow fadeInUp animated" data-animation="fadeInUp animated" data-delay=".2s">Hello Hong Kong-2023香港文化旅遊導賞員挑戰賽</span> -->
+                                                <h2 class="wow fadeInUp animated" data-animation="fadeInUp animated"
+                                                    data-delay=".2s">GALLERY</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slideshow-container">
+
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">1 / 8</div>
+                                            <img src="img/secondBlog/8.jpg" class="fadeImage">
+                                            <!-- <div class="text">Caption Two</div> -->
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">2 / 8</div>
+                                            <img src="img/secondBlog/1.jpg" class="fadeImage">
+                                            <!-- <div class="text">Caption Two</div> -->
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">3 / 8</div>
+                                            <img src="img/secondBlog/2.jpg" class="fadeImage">
+                                            <!-- <div class="text">Caption Two</div> -->
+                                        </div>
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">4 / 8</div>
+                                            <img src="img/secondBlog/3.jpg" class="fadeImage">
+                                            <!-- <div class="text">Caption Two</div> -->
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">5 / 8</div>
+                                            <img src="img/speaker_4.png" class="fadeImage">
+                                            <!-- <div class="text">Caption Two</div> -->
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">6 / 8</div>
+                                            <img src="img/secondBlog/5.jpg" class="fadeImage">
+                                            <!-- <div class="text">Caption Three</div> -->
+                                        </div>
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">7 / 8</div>
+                                            <img src="img/secondBlog/6.jpg" class="fadeImage">
+                                            <!-- <div class="text">Caption Text</div> -->
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">8 / 8</div>
+                                            <img src="img/secondBlog/7.jpg" class="fadeImage">
+                                            <!-- <div class="text">Caption Two</div> -->
+                                        </div>
+
+                                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                                    </div>
+                                    <br>
+
+                                    <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                        <span class="dot" onclick="currentSlide(2)"></span>
+                                        <span class="dot" onclick="currentSlide(3)"></span>
+                                        <span class="dot" onclick="currentSlide(4)"></span>
+                                        <span class="dot" onclick="currentSlide(5)"></span>
+                                        <span class="dot" onclick="currentSlide(6)"></span>
+                                        <span class="dot" onclick="currentSlide(7)"></span>
+                                        <span class="dot" onclick="currentSlide(8)"></span>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="posts_navigation pt-35 pb-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="prev-link">
+                                        <span>Prev Post</span>
+                                        <h4>
+                                            <a href="secondBlog.html">廣州賽區·啟動儀式</a>
+                                        </h4>
+                                        <!-- <h4><a href="#">(無)</a></h4> -->
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-2 text-left text-md-center">
+                                    <a href="blog.html" class="blog-filter"><img src="img/icon/c_d01.png" alt=""></a>
+                                </div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="next-link text-left text-md-right">
+
+                                        <span>next Post</span>
+                                        <h4>(無)</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                
+                <div class="col-lg-4">
+
+                    <div class="widget mb-40">
+                        <div class="widget-title text-center">
+                            <h4>有關媒體報道</h4>
+                        </div>
+                        <div class="widget__post">
+                            <ul>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://www.am730.com.hk/assets/v1/img/ui/masthead-logo.png"
+                                                alt="">
+                                        </div>
+                                        <h6><a
+                                                href="http://www.etnet.com.hk/www/tc/news/prnewswire_news_detail.php?newsid=4047837_XG47837_2&page=1">AM730</a>
+                                        </h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://s3-ap-southeast-1.amazonaws.com/capital-bucket/wp-content/uploads/2019/12/03162741/CAP-logo-1.png"
+                                                alt="">
+                                        </div>
+
+                                        <h6><a href="https://www.capital-hk.com/topics/letsgohongkong-210323-p01/">
+                                                CAPITAL</a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://rs3.sinahk.net/1y/layout/ms/t1/logo-g.png" alt="">
+                                        </div>
+                                        <h6><a
+                                                href="https://m.sina.com.hk/news/article/20230321/0/2/21/Hello-Hong-Kong%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E6%97%85%E9%81%8A%E5%B0%8E%E8%B3%9E%E5%93%A1%E6%8C%91%E6%88%B0%E8%B3%BD-%E8%AA%AA%E5%A5%BD%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E6%97%85%E9%81%8A%E6%95%85%E4%BA%8B-15092194.html">SINA
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://5b0988e595225.cdn.sohucs.com/images/20181218/1006455915574ed2baf12efa92b44568.png"
+                                                alt="">
+                                        </div>
+                                        <h6><a href=" https://page.om.qq.com/page/Ow6fU_eM7Q9gNrz_8fEZWbXQ0">騰訊
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://statics.itc.cn/web/static/images/sohu-logo.png" alt="">
+                                        </div>
+                                        <h6><a href="https://www.sohu.com/a/657383392_120965840">SOHU
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb" style="background-color: #6c757d;">
+                                            <img src="https://www.esports.mo/wp-content/uploads/2018/07/logo_withname.fw_-e1533547574185.png"
+                                                alt="">
+                                        </div>
+                                        <h6><a
+                                                href="https://www.esports.mo/%E7%BE%8E%E9%80%9A%E7%A4%BE%E6%96%B0%E8%81%9E/17537/">Macau
+                                                eSports Channel
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="http://www.etnet.com.hk/www/tc/common/images/etnet_toplogo.png"
+                                                alt="">
+                                        </div>
+                                        <h6><a
+                                                href="http://www.etnet.com.hk/www/tc/news/prnewswire_news_detail.php?newsid=4047837_XG47837_2&page=1">etnet
+                                                TV</a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://static.prnasia.com/pro/pcom/includes/images/logo-prn-02_PRN.png"
+                                                alt="">
+                                        </div>
+
+                                        <h6><a href="https://hk.prnasia.com/story/397102-2.shtml">
+                                                CISION PR Newswrie</a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://gogoadvise.com.hk/travel/wp-content/uploads/2018/04/cropped-gotravel_logo_purple-2.png"
+                                                alt="">
+                                        </div>
+                                        <h6><a
+                                                href="https://gogoadvise.com.hk/travel/%E5%85%A8%E7%90%83%E6%96%B0%E8%81%9E%E6%83%85%E5%A0%B1?rkey=20230321XG47837&filter=24153">GOGOAdvise-
+                                                Travel</a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://sme.gig.hk/wp-content/uploads/2014/07/cropped-sme_logo21.png"
+                                                alt="">
+                                        </div>
+
+                                        <h6><a href="https://sme.gig.hk/hello-hong-kong%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E6%97%85%E9%81%8A%E5%B0%8E%E8%B3%9E%E5%93%A1%E6%8C%91%E6%88%B0%E8%B3%BD-%E8%AA%AA%E5%A5%BD%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E6%97%85%E9%81%8A/
+                                                    ">sme.GIG.HK
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0ZccagfO3aoO6FWfncWHdHF5m3R4mse580SVsCGkAS77w7Rd_yu4agsxpVYySE7-TvEyjOJ42cy6aLCcRepWaLRLj9XRIbp8GXpulT74VpPwY-5D8WgNNeopk1-vzmRXN_QH_q_927ANLusrO7aSqN7yOyFzyOv-D0bObV4c6xbapogz6kUs_2yeSFA/s320-rw/kansbestpick-logo-2022.png"
+                                                alt="">
+                                        </div>
+                                        <h6><a
+                                                href="https://www.kansbestpick.com/p/traveler-news.html?rkey=20230321XG47837&filter=14102">揀飲．簡食記
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <span style="display: inline-block;width:80px;font-size: medium;">
+                                                Goodinfo! </span>
+                                        </div>
+                                        <h6><a href="https://goodinfo.tw/tw/StockAnnounceDetail.asp?STOCK_ID=%E5%8A%A0%E6%AC%8A%E6%8C%87%E6%95%B8&CLAIM_TIME=2023%2F03%2F21+17%3A18%3A00
+                                                        ">goodinfo
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="img/icon/cropped-TCR-icon.jpg" alt="">
+                                        </div>
+
+                                        <h6><a href="https://www.travelclassroom.net/news/?rkey=20230321XG47837&filter=18073
+                                                    ">travelclassroom</a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <span style="display: inline-block;width:80px;font-size: medium;">Travel
+                                                x Freedom 旅誌字遊 </span>
+                                        </div>
+                                        <h6><a
+                                                href="https://threeonelee.com/category-travel-information/?rkey=20230321XG47837&filter=20172">Travel
+                                                x Freedom 旅誌字遊
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://3.bp.blogspot.com/-0Bgz5V04AU8/YJIXPp8Mn_I/AAAAAAAB1eE/NiGgUTTb1xQGAQNDUM2z5TfXUDusOfuHgCK4BGAYYCw/s89/4.27_NEW_logo_lifenews_small_avatar.PNG"
+                                                alt="">
+                                        </div>
+                                        <h6><a
+                                                href="https://www.lifenewshk.com/p/blog-page_32.html?rkey=20230321XG47837&filter=21873">Lifenews
+                                                HK
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+
+                                        <div class="widget__post-thumb">
+                                            <span style="display: inline-block;width:80px;font-size: medium;">飛叔生活
+                                            </span>
+                                        </div>
+
+                                        <h6><a
+                                                href="HTTPS://YFL-KELVIN.COM/%E6%97%85%E9%81%8ANEWS-%E7%BE%8E%E9%80%9A%E7%A4%BE%E6%96%B0%E8%81%9E/?RKEY=20230321XG47837&FILTER=25507">
+                                                飛叔生活</a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://www.thehubnews.net/wp-content/uploads/2020/03/LOGO-544X180.png"
+                                                alt="">
+                                        </div>
+                                        <h6><a href="https://www.thehubnews.net/archives/202975">The Hub News
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://d16ad5czovw3en.cloudfront.net/wp-content/uploads/2021/06/06000819/Logo-%E9%95%B7-1200x1200-1.png"
+                                                alt="">
+                                        </div>
+                                        <h6><a href="https://www.contentplatform.info/2023/partner/prnewswire/104260/">MEGA
+                                                NEWS
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://i-news.com.tw/wp-content/uploads/2017/11/i-news_logo.png"
+                                                alt="">
+                                        </div>
+
+                                        <h6><a href="https://i-news.com.tw/2023/03/27564/
+                                                    ">享新聞
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://zamag.net/wp-content/uploads/2022/11/cropped-zamag-logo-10th.png"
+                                                alt="">
+                                        </div>
+
+                                        <h6><a
+                                                href="https://zamag.net/pr-newswire-asia/?rkey=20230321XG47837&filter=14485">
+                                                ZA誌
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://i0.wp.com/hkhealpy.com/wp-content/uploads/2022/06/cropped-cropped-logo-v2.jpg?resize=100%2C90&ssl=1"
+                                                alt="">
+                                        </div>
+                                        <h6><a
+                                                href="https://hkhealpy.com/%E5%B0%88%E6%AC%84/%E7%BE%8E%E9%80%9A%E7%A4%BE%E6%96%B0%E8%81%9E/%E7%BE%8E%E9%80%9A%E7%A4%BE%E6%96%B0%E8%81%9E/?rkey=20230321XG47837&filter=25503">癒報
+                                                Healpy Post
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget__post-content">
+                                        <div class="widget__post-thumb">
+                                            <img src="https://www.metroradio.com.hk/superhome/2022/images/img_logo_metro-black.svg"
+                                                alt="">
+                                        </div>
+                                        <h6><a
+                                                href="http://www.metroradio.com.hk/MetroFinance/Multimedia/wmpopup_archive2.asp?https://arch.metroradio.hk/104/20230322/104_202303220730.mp3">財知大道
+
+
+
+                                            </a></h6>
+                                        <span><i class="far fa-clock"></i>about 3 mins </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            </div>
+        </section>
+        <!-- inner-blog-end -->
+    </main>
+    <!-- footer -->
+    <footer class="footer-bg footer-p" style="background-image:url(img/footer_bg_img.jpg);background-size: cover;">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-12 col-lg-12 col-sm-12 text-center">
+                        <div class="footer-widget pt-120 mb-30">
+                            <div class="logo mb-35">
+                                <a href="#"><img src="img/logo/logo.png" style="width:174px;" alt="logo"></a>
+                            </div>
+                            <div class="footer-text mb-20">
+                                <p>遊遍世界，學貫中西</p>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/hellohk_micee"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-weixin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright-text text-center">
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="about.html">初心</a></li>
+                                    <li><a href="blog.html">報導</a></li>
+                                    <li><a href="history.html">歷史記錄</a></li>
+                                    <li><a href="https://forms.gle/2WGHpinJzQ9br7Nr6">報名</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/one-page-nav-min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/element-in-view.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
